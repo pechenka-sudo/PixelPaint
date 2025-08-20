@@ -437,5 +437,35 @@
   init();
 })();
 </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBThcSN2_8jiFi-iXmkaNhRkPKqJculwuM",
+    authDomain: "pixelpaint-fbf8d.firebaseapp.com",
+    databaseURL: "https://pixelpaint-fbf8d-default-rtdb.firebaseio.com",
+    projectId: "pixelpaint-fbf8d",
+    storageBucket: "pixelpaint-fbf8d.firebasestorage.app",
+    messagingSenderId: "58749984844",
+    appId: "1:58749984844:web:e27207a87abd5ea8dcd4e9",
+    measurementId: "G-K0KYGKCTS9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  // Экспортируем в window для доступа из другого скрипта при дальнейшей интеграции
+  window.__firebaseApp = app;
+</script>
 </body>
+  <div id="frame" style="width: 100%;margin: auto;background: rgba(0, 0, 0, 0.50);position: relative; z-index: 99998;">
+          <iframe data-aa='2407343' src='//acceptable.a-ads.com/2407343/?size=Adaptive'
+                            style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+        </div>
 </html>
